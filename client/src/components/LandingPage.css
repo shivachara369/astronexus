@@ -1,0 +1,27 @@
+/* Background Space Animation */
+.space-animation {
+    background: url("../assets/space-bg.gif") center/cover no-repeat;
+    position: absolute;
+    z-index: -1;
+    animation: moveStars 20s linear infinite;
+  }
+  
+  /* Scrollable About Box */
+  .about-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Animation for Stars */
+  @keyframes moveStars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -1000px 1000px;
+    }
+  }
+  
